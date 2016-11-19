@@ -1,0 +1,9 @@
+<div *ngIf="reward">{{routine}}
+   <span *ngIf="reward">{{reward.type}} </span>
+   <ul>
+      <li *ngFor="let behaviour of reward.behaviours">
+        {{behaviour.description}}, {{behaviour.earned}}
+      </li>
+    </ul>
+</div>
+
